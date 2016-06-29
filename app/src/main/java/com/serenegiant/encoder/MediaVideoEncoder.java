@@ -133,7 +133,8 @@ public class MediaVideoEncoder extends MediaEncoder {
 	}
 
 	private int calcBitRate() {
-		final int bitrate = (int)(BPP * FRAME_RATE * mWidth * mHeight);
+//		final int bitrate = (int)(BPP * FRAME_RATE * mWidth * mHeight);
+		final int bitrate = 1024 * 1024 * 4;
 		Log.i(TAG, String.format("bitrate=%5.2f[Mbps]", bitrate / 1024f / 1024f));
 		return bitrate;
 	}
